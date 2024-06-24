@@ -1,0 +1,33 @@
+.carousel-container {
+    width: 100%; 
+    max-width: 100%; 
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .carousel-image {
+    width: 100%; 
+    height: 50%; 
+    max-height: 550px; 
+    object-fit: cover; 
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    bottom: 10px; /* Espacio desde la parte inferior */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar con respecto al eje X */
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Asegurar que los controles ocupen todo el ancho del carrusel */
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  

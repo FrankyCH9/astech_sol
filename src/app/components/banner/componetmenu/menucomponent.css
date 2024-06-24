@@ -1,0 +1,45 @@
+
+.mencomponet{
+    padding: 0px 3%;
+    position: absolute;
+    width: 100%;
+    /*display: none;*/
+    visibility: hidden;
+    top: 146px;
+    left: 0px;
+    z-index: 1;
+    opacity: 0;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    white-space: nowrap;
+    /*height: 80%;*/
+}
+
+
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-list li {
+    list-style-type: none;
+    padding: 1px 0;
+    width: fit-content;
+    color: #888; 
+    position: relative;
+}
+.grid-list li:hover{
+    padding: 1px 0;
+    border-bottom: 0.1px solid #ccc;
+}
+.grid-list li span{
+    width: 20px;
+    height: 1px;
+    color: black;
+    background: red;
+}
+
+
+
+
