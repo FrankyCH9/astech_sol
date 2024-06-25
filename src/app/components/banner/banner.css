@@ -28,3 +28,30 @@
   /*display: flex; */
   visibility: visible;
 }
+.menu__list__item {
+  list-style: none;
+}
+
+/* Estilos para la versión móvil */
+@media (max-width: 768px) {
+  .hidden {
+    display: none;
+  }
+
+  .block {
+    display: block;
+  }
+}
+
+/* Estilos para la versión de escritorio */
+@media (min-width: 768px) {
+  .menu__list__item {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+  }
+
+  .md\\:hidden {
+    display: none;
+  }
+}

@@ -25,6 +25,12 @@ const SearchBar = ({ handleSearch, query, setQuery }) => {
 };
 
 const Banner = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   const [query, setQuery] = useState('');
 
   const handleSearch = (e) => {
@@ -58,37 +64,40 @@ const Banner = () => {
 
 
       </div>
-      <nav className='px-10 bg-black '>
-        <ul className=" w-full flex justify-center gap-[5%]  box-border font-medium relative  ">
-          <li className="menu__list__item itm1  py-4   ">
-            Productos
-            <Menuproduct valores={Datamenu.lisMenu} subtitulo={'Nuestros Productos'} />
-            <span className="line-span"></span>
-          </li>
-
-          <li className="menu__list__item itm1 py-4">
-            Proforma
-            <Menuproduct valores={Datamenu.lisMenuproformas} subtitulo={'Proformas'} />
-            <span className="line-span"></span>
-          </li>
-          <li className="menu__list__item itm1 py-4">
-            Laptos
-            <Menuproduct valores={Datamenu.lisMenulaptos} subtitulo={'Nuestras Laptos'} />
-            <span className="line-span"></span>
-          </li>
-          <li className="menu__list__item itm1 py-4" >
-            Compu's
-            <Menuproduct valores={Datamenu.listMenucompus} subtitulo={'Computadoras'} />
-            <span className="line-span"></span>
-          </li>
-          <li className="menu__list__item itm1 py-4" >
-            Distri+
-            <Menuproduct valores={Datamenu.listMenudistribucion} subtitulo={'Distribucion'}  />
-            <span className="line-span"></span>
-          </li>
-        </ul>
-
-      </nav>
+      <nav className='px-10 bg-black'>
+      <div className="flex justify-between items-center py-4">
+        <button className="md:hidden text-white" onClick={toggleMenu}>
+          &#9776; {/* Icono de hamburguesa */}
+        </button>
+      </div>
+      <ul className={`md:flex md:justify-center md:gap-[5%] box-border font-medium ${isOpen ? 'block' : 'hidden'} md:block`}>
+        <li className="menu__list__item itm1 py-4">
+          Productos
+          <Menuproduct valores={Datamenu.lisMenu} subtitulo={'Nuestros Productos'} />
+          <span className="line-span"></span>
+        </li>
+        <li className="menu__list__item itm1 py-4">
+          Proforma
+          <Menuproduct valores={Datamenu.lisMenuproformas} subtitulo={'Proformas'} />
+          <span className="line-span"></span>
+        </li>
+        <li className="menu__list__item itm1 py-4">
+          Laptos
+          <Menuproduct valores={Datamenu.lisMenulaptos} subtitulo={'Nuestras Laptos'} />
+          <span className="line-span"></span>
+        </li>
+        <li className="menu__list__item itm1 py-4">
+          Compu's
+          <Menuproduct valores={Datamenu.listMenucompus} subtitulo={'Computadoras'} />
+          <span className="line-span"></span>
+        </li>
+        <li className="menu__list__item itm1 py-4">
+          Distri+
+          <Menuproduct valores={Datamenu.listMenudistribucion} subtitulo={'Distribucion'} />
+          <span className="line-span"></span>
+        </li>
+      </ul>
+    </nav>
     </header>
 
   );
