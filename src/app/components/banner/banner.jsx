@@ -40,7 +40,7 @@ const Banner = () => {
         <div style={styles.logoContainer}>
           <img src='/images/logo.png' alt="Logo de Astech Soluciones" style={styles.logo} />
         </div>
-        <h2 style={styles.title} className="banner">
+        <h2 style={styles.title} className="banner  ">
           Astech Soluciones
         </h2>
         <div style={styles.linksContainer}>
@@ -59,31 +59,31 @@ const Banner = () => {
 
       </div>
       <nav className='px-10 bg-black '>
-        <ul className=" w-full flex justify-center gap-[5%]  box-border font-medium   ">
+        <ul className=" w-full flex justify-center gap-[5%]  box-border font-medium relative  ">
           <li className="menu__list__item itm1  py-4   ">
             Productos
-            <Menuproduct valores={Datamenu.lisMenu} />
+            <Menuproduct valores={Datamenu.lisMenu} subtitulo={'Nuestros Productos'} />
             <span className="line-span"></span>
           </li>
 
           <li className="menu__list__item itm1 py-4">
             Proforma
-            <Menuproduct valores={Datamenu.lisMenu} />
+            <Menuproduct valores={Datamenu.lisMenuproformas} subtitulo={'Proformas'} />
             <span className="line-span"></span>
           </li>
           <li className="menu__list__item itm1 py-4">
             Laptos
-            <Menuproduct valores={Datamenu.lisMenu} />
+            <Menuproduct valores={Datamenu.lisMenulaptos} subtitulo={'Nuestras Laptos'} />
             <span className="line-span"></span>
           </li>
           <li className="menu__list__item itm1 py-4" >
             Compu's
-            <Menuproduct valores={Datamenu.lisMenu} />
+            <Menuproduct valores={Datamenu.listMenucompus} subtitulo={'Computadoras'} />
             <span className="line-span"></span>
           </li>
           <li className="menu__list__item itm1 py-4" >
-            Distribución
-            <Menuproduct valores={Datamenu.lisMenu} />
+            Distri+
+            <Menuproduct valores={Datamenu.listMenudistribucion} subtitulo={'Distribucion'}  />
             <span className="line-span"></span>
           </li>
         </ul>
