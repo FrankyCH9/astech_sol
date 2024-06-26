@@ -1,6 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-.banner {
+.allbaner {
+  position: fixed;
+  left: 0;
+  margin-top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.cont-burguer {
+  position: fixed;
+  left: 0;
+  top: 102px;
+  width: 100%;
+  z-index: 3;
+}
+
+.ban{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.banner-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.banner-title {
   font-family: "Bebas Neue", sans-serif;
   font-size: 2rem;
 }
@@ -22,6 +49,7 @@
   bottom: 1;
 }
 
+
 .menu__list__item:hover .line-span {
   width: 100%;
 }
@@ -34,10 +62,16 @@
 .icon-vermas {
   display: none;
 }
+.icon-menu{
+  font-size: 24px;
+}
 
 @media (max-width: 1000px) {
   .allbaner {
     flex-direction: column-reverse;
+  }
+  .ban{
+    justify-content: start;
   }
   .allbaner .cont-buscador {
     width: 100%;
@@ -45,6 +79,13 @@
   .allbaner .banner-buscador {
     width: 100%;
     box-sizing: border-box;
+  }
+  .cont-burguer {
+    position: fixed;
+    left: 0;
+    top: 150px;
+    width: 100%;
+    z-index: 3;
   }
 }
 
@@ -71,6 +112,27 @@
   .icon-vermas{
     display: block;
   }
+ 
+  .banner-title {
+    font-size: 1.5rem;
+  }
+  .icon-menu{
+    font-size: 22px;
+  }
+
+  .ban{
+    margin-top:12px;
+   
+  }
+
+  .cont-burguer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+  }
+
 }
 
 /* Estilos para la versión de escritorio */
@@ -83,5 +145,21 @@
 
   .md\\:hidden {
     display: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .banner-container{
+    flex-direction: column;
+  }
+  .icon-menu{
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ban{
+    margin-bottom: 4px;
   }
 }

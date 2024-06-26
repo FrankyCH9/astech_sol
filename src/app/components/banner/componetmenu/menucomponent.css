@@ -6,7 +6,8 @@
   width: 100%;
   /*display: none;*/
   visibility: hidden;
-  top: 160px;
+  /*top: 160px;*/
+  top: 58px;
   left: 0px;
   z-index: 1;
   opacity: 0;
@@ -55,7 +56,7 @@
 
 @media (max-width: 1000px) {
   .mencomponet {
-    top: 210px;
+    top: 58px;
   }
 }
 

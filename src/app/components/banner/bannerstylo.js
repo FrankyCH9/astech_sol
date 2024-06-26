@@ -31,7 +31,7 @@ export const styles = {
     title: {
         color: 'black',
         margin: '0',
-        flex: 1,
+        
         textAlign: 'center',
     },
     linksContainer: {
@@ -48,7 +48,6 @@ export const styles = {
         
     },
     icon: {
-        fontSize: '24px',
         color: 'black',
     },
     counter: {
@@ -60,8 +59,8 @@ export const styles = {
         marginRight: '10px'
     },
     logo: {
-        width: '100%',
-        height: 'auto',
+        width: '44px',
+        height: '44px',
         borderRadius: '8px', 
     }
 };

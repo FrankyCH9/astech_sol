@@ -62,7 +62,7 @@ const Banner = () => {
 
   return (
     <header>
-      <div style={styles.bannerContainer} className="allbaner text-black">
+      <div style={styles.bannerContainer} className="allbaner  text-black">
         <div className=" p-2 cont-buscador  ">
           <SearchBar
             handleSearch={handleSearch}
@@ -71,41 +71,51 @@ const Banner = () => {
           />
         </div>
 
-        <div className="flex w-full">
-          <div style={styles.logoContainer}>
-            <img
-              src="/images/logo.png"
-              alt="Logo de Astech Soluciones"
-              style={styles.logo}
-            />
+
+
+        <div className="flex w-full  items-center  ">
+          <div className="banner-container">
+            <div className="ban " >
+              <img
+                src="/images/logo.png"
+                alt="Logo de Astech Soluciones"
+                style={styles.logo}
+              />
+
+              <h2 className=" banner-title   ">
+                Astech Soluciones
+              </h2>
+            </div>
+
+            <div style={styles.linksContainer} className="icon-menu ">
+              <a href="/pedidos" style={styles.link}>
+                <FaUser style={styles.icon} />
+
+              </a>
+              <FaMapMarkerAlt style={styles.icon} />
+              <div className="flex justify-center">
+                <FaHeart style={styles.icon} />
+                <span style={styles.counter}>0</span>
+              </div>
+              <div className="flex justify-center">
+                <FaShoppingCart style={styles.icon} />
+                <span style={styles.counter}>0</span>
+              </div>
+            </div>
           </div>
-          <h2 style={styles.title} className="banner  ">
-            Astech Soluciones
-          </h2>
-          <div style={styles.linksContainer}>
-            <a href="/pedidos" style={styles.link}>
-              <FaUser style={styles.icon} />
-              Orders & Sign In
-            </a>
-            <FaMapMarkerAlt style={styles.icon} />
-            <FaHeart style={styles.icon} />
-            <span style={styles.counter}>0</span>
-            <FaShoppingCart style={styles.icon} />
-            <span style={styles.counter}>0</span>
-          </div>
+
         </div>
       </div>
 
-      <nav className="px-10 bg-black  ">
+      <nav className="px-10 bg-black cont-burguer ">
         <div className="flex justify-between items-center ">
-          <button className="md:hidden text-white" onClick={toggleMenu}>
+          <button className="md:hidden text-white text-[20px] ml-[-32px]" onClick={toggleMenu}>
             &#9776; {/* Icono de hamburguesa */}
           </button>
         </div>
         <ul
-          className={`md:flex md:justify-center md:gap-[5%] navegacion box-border font-medium ${
-            isOpen ? "block" : "hidden"
-          } md:block`}
+          className={`md:flex md:justify-center md:gap-[5%] navegacion box-border font-medium ${isOpen ? "block" : "hidden"
+            } md:block`}
         >
           <li className="menu__list__item itm1 py-4">
             <div className="flex gap-2 justify-between items-center">
