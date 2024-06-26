@@ -6,7 +6,7 @@
   width: 100%;
   /*display: none;*/
   visibility: hidden;
-  top: 178px;
+  top: 160px;
   left: 0px;
   z-index: 1;
   opacity: 0;
@@ -19,6 +19,10 @@
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+}
+
+.mencomponet .mencomponet-box {
+  background: white;
 }
 
 .grid-list {
@@ -47,4 +51,34 @@
 
 .grid-list li:hover span {
   width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .mencomponet {
+    top: 210px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mencomponet {
+    position: static;
+    display: none;
+    opacity: 1;
+    background-color: red;
+    padding: 0%;
+  }
+  .mencomponet .mencomponet-box {
+    background: black;
+    color: white;
+  }
+  .mencomponet .mencomponet-box div {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .mencomponet .mencomponet-box h2 {
+    display: none;
+  }
+  
+
+ 
 }

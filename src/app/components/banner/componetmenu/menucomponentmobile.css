@@ -1,0 +1,14 @@
+
+
+.mencomponetmobile{
+    display: none;
+    
+}
+
+@media (max-width: 768px) {
+    .mencomponetmobile {
+      display: block;
+      
+      
+    }
+}

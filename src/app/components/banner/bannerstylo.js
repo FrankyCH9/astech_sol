@@ -7,6 +7,7 @@ export const styles = {
         justifyContent: 'space-between',
         borderRadius: '0',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        
     },
     searchBar: {
         display: 'flex',
@@ -28,7 +29,7 @@ export const styles = {
         outline: 'none',
     },
     title: {
-        color: '#000',
+        color: 'black',
         margin: '0',
         flex: 1,
         textAlign: 'center',
