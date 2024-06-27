@@ -10,6 +10,19 @@ export const products = [
       price: 'S/200',
       webPrice: 'S/ 165',
       stock: 1,
+      colors: [
+        { name: 'Black', class: 'bg-black' },
+        { name: 'Red', class: 'bg-red-500' },
+        // Otros colores disponibles
+      ],
+      sizes: [
+        { name: 'S', inStock: true },
+        { name: 'M', inStock: false },
+        // Otros tamaños disponibles
+      ],
+      description: 'Descripción del producto...',
+      highlights: ['Destacado 1', 'Destacado 2', 'Destacado 3'],
+      details: 'Detalles del producto...',
     },
     {
       id: 2,

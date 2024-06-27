@@ -1,0 +1,23 @@
+.brand-carousel-container {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px;
+  }
+  
+  .brand-slide {
+    text-align: center;
+  }
+  
+  .brand-logo {
+    max-width: 100%; /* Imágenes del mismo tamaño */
+    height: auto;
+  }
+  
+  .brand-carousel-container h2 {
+    font-size: 24px; /* Tamaño de fuente adecuado */
+    color: #333; /* Color de texto */
+    margin-bottom: 20px; /* Espacio inferior */
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    font-weight: bold; /* Negrita */
+  }
+  

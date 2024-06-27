@@ -37,7 +37,7 @@ const Footer = () => {
 
           {/* Footer Text sections */}
           <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className=" rounded-lg  p-6">
+            <div className="d:\Proyecto 2024\Nueva carpeta\INGENIUM\src\components\Login rounded-lg  p-6">
               <h1 className="text-xl font-bold mb-3">Cuentas:</h1>
               <p className="mb-1">OBA COMPUTER</p>
               <p className="mb-1">BCP: 40594971117008 (transferencia sin costo)</p>

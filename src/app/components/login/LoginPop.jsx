@@ -4,18 +4,29 @@ import Login from "./Login";
 
 const LoginPopup = ({ loginPopup, handleLoginPopup }) => {
   const [showSignIn, setShowSignIn] = useState(false);
+  const loginPopupRef = useRef();
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (loginPopupRef.current && !loginPopupRef.current.contains(e.target)) {
+        handleLoginPopup(false);
+      }
+    };
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener("click", handleClickOutside);
+    }
+
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener("click", handleClickOutside);
+      }
+    };
+  }, [handleLoginPopup]);
 
   const handleSignIn = () => {
     setShowSignIn(!showSignIn);
   };
-
-  const loginPopupRef = useRef();
-
-  window.addEventListener("click", (e) => {
-    if (e.target === loginPopupRef.current) {
-      handleLoginPopup(false);
-    }
-  });
 
   const bgImage = {
     width: "100%",
@@ -25,6 +36,7 @@ const LoginPopup = ({ loginPopup, handleLoginPopup }) => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   };
+
   return (
     <>
       {loginPopup && (
