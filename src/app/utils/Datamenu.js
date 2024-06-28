@@ -25,7 +25,7 @@ export const lisMenuproformas = [
 ];
 
 export const lisMenulaptos = [
-    { id: 1, titulo: 'Laptops', link: '' },
+    { id: 1, titulo: 'Laptops', link: '/laptos' },
     { id: 2, titulo: 'Todas', link: '' },
     { id: 3, titulo: 'Intel i3 Ryzen 3', link: '' },
     { id: 4, titulo: 'Intel i5 Ryzen 5', link: '' },

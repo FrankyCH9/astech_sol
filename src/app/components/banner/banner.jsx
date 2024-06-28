@@ -1,4 +1,8 @@
+
+
+
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 import {
   FaUser,
@@ -87,7 +91,8 @@ const Banner = () => {
               />
 
               <h2 className=" banner-title   ">
-                Astech Soluciones
+                
+                <Link href={'/'}>Astech Soluciones</Link>
               </h2>
             </div>
 

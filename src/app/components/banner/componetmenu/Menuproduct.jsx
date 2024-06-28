@@ -1,5 +1,6 @@
 
 import './menucomponent.css'
+import Link from "next/link";
 
 const Menuproduct = ({ valores, subtitulo}) => {
     return (
@@ -9,7 +10,10 @@ const Menuproduct = ({ valores, subtitulo}) => {
                     <h2 className='font-bold mb-2'>{subtitulo} </h2>
                     <ul className='grid-list'>
                         {valores.map((item) => (
-                            <li key={item.id}>{item.titulo} <span className='underline'></span></li>
+                            <li key={item.id}>
+                                <Link href={item.link}>{item.titulo}</Link>
+                             <span className='underline'></span>
+                            </li>
                         ))}
                     </ul>
                 </div>
