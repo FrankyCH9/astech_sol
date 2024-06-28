@@ -63,9 +63,7 @@ const Banner = () => {
       [key]: !prevState[key],
     }));
   };
-  const openGoogleMaps = () => {
-    window.open('https://www.google.com/maps/dir//28+de+Julio+125,+Cerro+Colorado+04014/@-16.3945266,-71.5681113,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x91424a76c9ba0c6d:0x97df7301e8fccd6a!2m2!1d-71.5669804!2d-16.391629?entry=ttu', '_blank');
-  }
+ 
 
 
   return (
@@ -91,7 +89,7 @@ const Banner = () => {
               />
 
               <h2 className=" banner-title   ">
-                
+
                 <Link href={'/'}>Astech Soluciones</Link>
               </h2>
             </div>
@@ -105,7 +103,11 @@ const Banner = () => {
 
               </a>
               <div>
-                <FaMapMarkerAlt style={styles.icon} onClick={openGoogleMaps} />
+                <Link href={'/ubicacion'} >
+                  <FaMapMarkerAlt style={styles.icon}  />
+                </Link>
+
+
               </div>
               <div className="flex justify-center">
                 <FaHeart style={styles.icon} />

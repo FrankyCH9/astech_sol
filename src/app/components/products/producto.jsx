@@ -2,7 +2,7 @@ import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import Link from "next/link";
 
-const Producto = ({ datos, titulo, ruta }) => {
+const Producto = ({ datos, titulo, ruta, rutadetalle }) => {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-10 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">

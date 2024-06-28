@@ -51,6 +51,7 @@ body {
 
 /*-------------------Stylos para paginas--------------*/
 /*Stylo laptos*/
-.laptos{
+.laptos, .ubicacion{
   padding-top: 160px;
 }
+
